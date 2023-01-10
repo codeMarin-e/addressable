@@ -1,0 +1,33 @@
+{
+    "name": "marinar/addressable",
+    "description": "Addressable",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marin Ivanov",
+            "email": "marin@dev.nddesign.no"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Marinar\\Addressable\\": "src/"
+        }
+    },
+
+    "require": {
+        "marinar/orderable": "*"
+    },
+    "extra": {
+        "marinar": {
+            "module": false,
+            "plugin": true,
+            "addon_to": false
+        },
+        "laravel": {
+            "aliases": {
+                "MarinarAddressable": "Marinar\\Addressable\\MarinarAddressable"
+            }
+        }
+    }
+}
