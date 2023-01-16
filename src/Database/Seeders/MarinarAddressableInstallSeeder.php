@@ -14,6 +14,7 @@
             $this->getRefComponents();
             $this->stubFiles();
             $this->dbMigrate();
+            $this->giveGitPermissions(\Marinar\Addressable\MarinarAddressable::getPackageMainDir());
             $this->refComponents->info("Done!");
         }
 
