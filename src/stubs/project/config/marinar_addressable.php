@@ -25,6 +25,8 @@ return [
     'exclude_stubs' => [
     ],
 
+    'just_for_test' => 1,
+
     /**
      * Addons hooked to the package
      */
