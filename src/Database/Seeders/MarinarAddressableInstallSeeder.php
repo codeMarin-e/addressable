@@ -2,6 +2,7 @@
     namespace Marinar\Addressable\Database\Seeders;
 
     use Illuminate\Database\Seeder;
+    use Marinar\Addressable\MarinarAddressable;
 
     class MarinarAddressableInstallSeeder extends Seeder {
 
