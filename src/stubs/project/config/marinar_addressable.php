@@ -23,9 +23,8 @@ return [
      * If path is file - only it
      */
     'exclude_stubs' => [
-    ],
 
-    'just_for_test' => 1,
+    ],
 
     /**
      * Addons hooked to the package
