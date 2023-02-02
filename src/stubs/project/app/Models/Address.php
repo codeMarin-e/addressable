@@ -10,9 +10,13 @@ class Address extends Model {
     use MacroableModel;
     use Orderable;
 
+    // @HOOK_TRAITS
+
     protected static function boot() {
         parent::boot();
         static::updated( static::class.'@onUpdated_updateAddressableCache' );
+
+        // @HOOK_CONSTRUCT
     }
 
     public function sameQryWheres () {
