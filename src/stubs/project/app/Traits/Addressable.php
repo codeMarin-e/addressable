@@ -1,5 +1,5 @@
 <?php
-    namespace Marinar\Addressable\Traits;
+    namespace App\Traits;
 
     use App\Models\Address;
 

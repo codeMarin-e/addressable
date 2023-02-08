@@ -22,13 +22,13 @@
             $this->refComponents->info("Done!");
         }
 
-        public function clearDB() {
-            $this->refComponents->task("Clear DB rows", function() {
-                $addresses = Address::get();
-                foreach ($addresses as $address) {
-                    $address->delete();
-                }
-                return true;
-            });
-        }
+//        public function clearDB() {
+//            $this->refComponents->task("Clear DB rows", function() {
+//                $addresses = Address::get();
+//                foreach ($addresses as $address) {
+//                    $address->delete();
+//                }
+//                return true;
+//            });
+//        }
     }

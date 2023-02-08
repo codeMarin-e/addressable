@@ -3,8 +3,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
-use Marinar\Marinar\Traits\MacroableModel;
-use Marinar\Orderable\Traits\Orderable;
+use App\Traits\MacroableModel;
+use App\Traits\Orderable;
 
 class Address extends Model {
     use MacroableModel;
@@ -16,7 +16,7 @@ class Address extends Model {
         parent::boot();
         static::updated( static::class.'@onUpdated_updateAddressableCache' );
 
-        // @HOOK_CONSTRUCT
+        // @HOOK_BOOT
     }
 
     public function sameQryWheres () {
