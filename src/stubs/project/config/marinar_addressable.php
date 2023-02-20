@@ -30,7 +30,7 @@ return [
      * If path is file - only it
      */
     'exclude_stubs' => [
-
+        // @HOOK_CONFIG_EXCLUDE_STUBS
     ],
 
     /**
