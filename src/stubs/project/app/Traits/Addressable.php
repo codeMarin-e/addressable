@@ -38,6 +38,7 @@
                 $this->addressableCache();
             }
             if(!isset($this->addresses_cache[$type])) {
+                $attrs['type'] = $attrs['type']?? $type;
                 $this->addresses_cache[$type] = $this->addresses()->create($attrs);
             }
             return $this->addresses_cache[$type];
